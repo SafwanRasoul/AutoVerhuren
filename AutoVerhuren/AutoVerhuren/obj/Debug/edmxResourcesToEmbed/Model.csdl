@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AutosVerhurenModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="auto">
+    <Key>
+      <PropertyRef Name="auto_id" />
+    </Key>
+    <Property Name="auto_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="merk" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="model" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="bouwjaar" Type="Int32" />
+    <Property Name="kleur" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="brandstof" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="huurprijs" Type="Int32" />
+    <Property Name="kenteken" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="status" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="AutosVerhurenEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="autoes" EntityType="Self.auto" />
+  </EntityContainer>
+</Schema>

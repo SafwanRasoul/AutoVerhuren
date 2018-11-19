@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AutosVerhurenModelStoreContainer" CdmEntityContainer="AutosVerhurenEntities">
+    <EntitySetMapping Name="autoes">
+      <EntityTypeMapping TypeName="AutosVerhurenModel.auto">
+        <MappingFragment StoreEntitySet="auto">
+          <ScalarProperty Name="auto_id" ColumnName="auto_id" />
+          <ScalarProperty Name="merk" ColumnName="merk" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="bouwjaar" ColumnName="bouwjaar" />
+          <ScalarProperty Name="kleur" ColumnName="kleur" />
+          <ScalarProperty Name="brandstof" ColumnName="brandstof" />
+          <ScalarProperty Name="huurprijs" ColumnName="huurprijs" />
+          <ScalarProperty Name="kenteken" ColumnName="kenteken" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

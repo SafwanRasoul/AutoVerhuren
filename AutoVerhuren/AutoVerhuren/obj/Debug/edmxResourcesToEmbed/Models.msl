@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VerhurenModelStoreContainer" CdmEntityContainer="VerhurenEntities">
+    <EntitySetMapping Name="klants">
+      <EntityTypeMapping TypeName="VerhurenModel.klant">
+        <MappingFragment StoreEntitySet="klant">
+          <ScalarProperty Name="klant_id" ColumnName="klant_id" />
+          <ScalarProperty Name="naam" ColumnName="naam" />
+          <ScalarProperty Name="achternaam" ColumnName="achternaam" />
+          <ScalarProperty Name="adres" ColumnName="adres" />
+          <ScalarProperty Name="huis_nr" ColumnName="huis_nr" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="woonplaats" ColumnName="woonplaats" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VerhurenModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="klant">
+    <Key>
+      <PropertyRef Name="klant_id" />
+    </Key>
+    <Property Name="klant_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naam" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="achternaam" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="adres" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="huis_nr" Type="Int32" />
+    <Property Name="postcode" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="woonplaats" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="VerhurenEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="klants" EntityType="Self.klant" />
+  </EntityContainer>
+</Schema>
